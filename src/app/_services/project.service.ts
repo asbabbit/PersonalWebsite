@@ -24,7 +24,7 @@ export class ProjectService {
       description: 'Test Description',
       projectLink: 'https://github.com',
       tags: [Tag.CPP, Tag.VERILOG],
-      pictures: ["../../assets/ProfileSqr.JPG","../../assets/ProfileSqr.JPG","../../assets/ProfileSqr.JPG"]
+      pictures: ["../../assets/ProfileSqr.JPG","../../assets/Grad.JPG","../../assets/ProfileSqr.JPG"]
     },
     {
       id: 2,

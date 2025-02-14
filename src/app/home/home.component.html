@@ -1,29 +1,59 @@
 <div class="container">
     <div class="row">
-        <!--About Me-->
-        <div class="col-lg shadow border m-1">
-            <div>
-                <h2 class="text-center">About Me</h2>
-                <img src="../../assets/Grad.JPG" alt="profile picture" width="256" height="256" class="rounded-circle mx-auto d-block">
-                <p style="text-indent: 3em;" class="text-left">Recent Computer Engineering graduate from the Ira A. Fulton Schools of Engineering at ASU with a strong passion for hardware design and digital systems. I’ve enjoyed designing ripple carry adders and infix-to-postfix stacks using Verilog and developing embedded systems with the FRDM microcontroller.</p>
-                <p style="text-indent: 3em;" class="text-left">My undergraduate research focuses on creating an open-source large language model that generates Verilog code, combining my interests in AI and hardware. As a teaching assistant for Data Structures and Algorithms, I collaborated with faculty to develop assignments for 100+ students. I’m eager to learn, innovate, and connect with like-minded professionals!</p>
+        <!-- About Me -->
+        <div class="col-lg-5 m-1">
+            <div class="text-center">
+                <!-- Profile Picture -->
+                <img src="../../assets/ProfileSqr.JPG" alt="profile picture" width="256" height="256" class="rounded-circle mx-auto d-block">
+
+                <!-- Social Icons -->
+                <div class="mt-3">
+                    <a href="mailto:almasbabbitt@gmail.com" target="_blank" class="text-decoration-none mx-2">
+                        <i class="bi bi-envelope-at-fill fs-2 light-blue"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/babbittalma/" target="_blank" class="text-decoration-none mx-2">
+                        <i class="bi bi-linkedin fs-2 light-blue"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alma__babbitt/" target="_blank" class="text-decoration-none mx-2">
+                        <i class="bi bi-instagram fs-2 light-blue"></i>
+                    </a>
+                    <a href="https://github.com/asbabbit" target="_blank" class="text-decoration-none mx-2">
+                        <i class="bi bi-github fs-2 light-blue"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- Featured Project -->
-        <div class="col-lg shadow border m-1">
+        <!-- Intro Section -->
+        <div class="col-lg-5 m-1">
+            <div>
+                <h2>Hello</h2>
+                <p class="text-left">I am a recent Computer Engineering graduate from ASU’s Ira A. Fulton Schools of Engineering, with a strong passion for hardware design and digital systems. My interests lie in digital design, embedded systems, and computer architecture, where I’ve worked on projects like ripple carry adders and communication protocols with microcontrollers.</p>
+                <p class="text-left">Beyond coursework, I have headed the research on an open-source large language model for Verilog code generation in the LOGOS Lab at ASU. I also served as a teaching assistant for Data Structures and Algorithms, helping design programming assignments for over 100 students.</p>
+                <p class="text-left">I’m always eager to learn, collaborate, and explore opportunities in hardware design and verification. Let’s connect!</p>
+                <a href="../../assets/Alma_Babbitt_Hardware.pdf" download class="text-decoration-none mx-2">
+                    <i class="bi bi-download"> Download my resume as a PDF</i>
+                </a>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Project -->
+    <div class="col-lg m-1 d-flex flex-column align-items-center">
+        <div class="p-3 rounded shadow-sm" style="background-color: #47494a; max-width: 500px; width: 100%; padding: 1rem;"> <!-- Lighter background -->
             <div class="text-center">
                 <h2>Featured Project</h2>
                 <h4>{{featuredProject.name}}</h4>
             </div>
-
-            <carousel>
+    
+            <carousel class="text-light">
                 <div *ngFor="let picture of featuredProject.pictures">
                     <slide><img src = {{picture}} alt="slide" style="display: block; width: 100%;"></slide>
                 </div>  
-            </carousel>
-            <p class="mt-2">{{featuredProject.summary}}</p>
-            <p>Got to my profotlio to learn more!</p>
+            </carousel>     
+
+            <p class="mt-2 text-center">{{featuredProject.summary}}</p>
+            <p class="text-center">Go to my portfolio to learn more!</p>
         </div>
     </div>
 </div>
