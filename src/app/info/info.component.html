@@ -1,8 +1,8 @@
-
 <h1 class="text-center" *ngIf="!info.exists">{{info.section}}</h1>
-<div class="rounded" style="background-color: #47494a; max-width: 600px; min-width: 600px; padding: 1rem;">
-    <div class="row flex-nowrap" >
-        <img [src]="info.icon" style="max-width: 100%; max-height: 100px; width: auto; height:auto;">
+
+<div class="p-3 rounded info-box">
+    <div class="row flex-nowrap">
+        <img [src]="info.icon" class="info-icon">
         <div class="col">
             <h3>{{info.title}}</h3>
             <h5>{{info.company}}</h5>
@@ -10,6 +10,6 @@
         </div>
     </div>
     <br>
+    
     <p class="mx-4" [innerHTML]="info.summary"></p>
 </div>
-
