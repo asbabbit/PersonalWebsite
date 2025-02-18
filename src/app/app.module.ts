@@ -14,6 +14,9 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { CarouselModule }  from 'ngx-bootstrap/carousel';
+import { AboutComponent } from './about/about.component';
+import { InfoComponent } from './info/info.component';
+import { FeaturedProjectComponent } from './featured-project/featured-project.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { CarouselModule }  from 'ngx-bootstrap/carousel';
     ResumeComponent,
     ContactComponent,
     ProjectCardComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    AboutComponent,
+    InfoComponent,
+    FeaturedProjectComponent
   ],
   imports: [
     BrowserModule,
