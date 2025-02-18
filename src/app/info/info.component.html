@@ -1,16 +1,17 @@
 
 <h1 class="text-center" *ngIf="!info.exists">{{info.section}}</h1>
-<div class="rounded" style="background-color: #47494a; max-width: 600px; min-width: 600px; width: 100%; padding: 1rem;">
+<div class="rounded" style="background-color: #47494a; max-width: 600px; min-width: 600px; padding: 1rem;">
     <div class="row">
         <div class="col-lg-2">
-            <img src="../../favicon.ico" width="56" height="56">
+            <img [src]="info.icon" style="width: 120%;">
         </div>
         <div class="col-lg-9">
             <h3>{{info.title}}</h3>
             <h5>{{info.company}}</h5>
-            <h5 class="italic-heading">{{info.time}}</h5>
-            <p>{{info.summary}}</p>
+            <h5 style="font-style: italic">{{info.time}}</h5>
         </div>
     </div>
+    <br>
+    <p class="mx-4" [innerHTML]="info.summary"></p>
 </div>
 
