@@ -13,7 +13,9 @@ export class Tag{
     static readonly GIT = new Tag('Git', 'black');
     static readonly LINUX = new Tag('Linux', 'yellow');
     static readonly FPGA = new Tag('FPGA', 'green');
-    static readonly MICROCONTROLLER = new Tag('Microcontroller', 'purple');
+    static readonly MCU = new Tag('MCU', 'purple');
+    static readonly MCUXPresso = new Tag("MCUXpresso Software", "light orange");
+    static readonly CIRCUITS = new Tag("Digital Circuits", "black");
 
     private constructor(private readonly key: string, public readonly color: string){
 
