@@ -2,25 +2,14 @@
     <h2>{{project.name}}</h2>
     <button class="btn-close" (click)="bsModalRef.hide()"></button>
 </div>
-
 <div class="modal-body">
-    <carousel [interval]="0">
+    <carousel [interval]="0" class="carousel-container">
         <div *ngFor="let picture of project.pictures">
-            <slide>
-                <img src="{{picture}}" alt="slide" style="display: block; height: 480px; width: auto; margin: 0 auto;">
-            </slide>
-        </div>  
-
-        <!-- Custom left and right controls positioning -->
-        <a class="carousel-control-prev" role="button" style="left: 0;">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" role="button" style="right: 0;">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-        </a>
-    </carousel>
+          <slide>
+            <img src="{{picture}}" alt="slide" class="slide-image">
+          </slide>
+        </div>
+      </carousel>      
     <h3 class="mt-2">Description</h3>
     <p>{{project.description}}</p>
     <p>You can find my project on my Github <a href={{project.projectLink}} target="_blank">here</a></p>
