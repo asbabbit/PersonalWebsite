@@ -17,6 +17,7 @@ import { CarouselModule }  from 'ngx-bootstrap/carousel';
 import { AboutComponent } from './about/about.component';
 import { InfoComponent } from './info/info.component';
 import { FeaturedProjectComponent } from './featured-project/featured-project.component';
+import { CustomCarouselComponent } from './custom-carousel/custom-carousel.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FeaturedProjectComponent } from './featured-project/featured-project.co
     ProjectModalComponent,
     AboutComponent,
     InfoComponent,
-    FeaturedProjectComponent
+    FeaturedProjectComponent,
+    CustomCarouselComponent
   ],
   imports: [
     BrowserModule,

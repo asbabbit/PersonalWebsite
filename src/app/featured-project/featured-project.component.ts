@@ -9,12 +9,12 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./featured-project.component.css']
 })
 export class FeaturedProjectComponent implements OnInit{
-  featuredProject = {} as Project;
+  project = {} as Project;
     constructor(private titleService: Title, private projectService: ProjectService) {
       this.titleService.setTitle('Alma Babbitt - Home');
     }
     ngOnInit(): void {
-      this.featuredProject = this.projectService.GetProjectById(1);
+      this.project = this.projectService.GetProjectById(1);
     }
 
 }

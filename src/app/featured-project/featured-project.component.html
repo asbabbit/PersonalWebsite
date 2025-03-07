@@ -3,16 +3,11 @@
     <h1>Featured Project</h1>
     <div class="p-3 rounded" style="background-color: #47494a; max-width: 600px; width: 100%; padding: 1rem;"> <!-- Lighter background -->
         <div class="text-center">
-            <h4>{{featuredProject.name}}</h4>
+            <h4>{{project.name}}</h4>
         </div>
+        <app-custom-carousel [project]="project"></app-custom-carousel>
 
-        <carousel class="text-light">
-            <div *ngFor="let picture of featuredProject.pictures">
-                <slide><img src = {{picture}} alt="slide" style="display: block; width: 100%;"></slide>
-            </div>  
-        </carousel>     
-
-        <p class="mt-2 text-center">{{featuredProject.summary}}</p>
+        <p class="mt-2 text-center">{{project.summary}}</p>
         <p class="text-center">Go to my portfolio section to see more!</p>
     </div>
 </div>
