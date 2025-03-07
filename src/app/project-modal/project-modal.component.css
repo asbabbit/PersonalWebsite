@@ -1,20 +1,9 @@
-.carousel-container {
-    width: 100%;
-    height: 100%; /* Fixed height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Make container a positioned element */
-    overflow: hidden;
-  }
-  
-  .slide-image {
+.slide-image {
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: 400px;
     object-fit: contain;
     object-position: center;
-  }
-
-  
+    margin: 0 auto; /* This helps with horizontal centering */
+}
