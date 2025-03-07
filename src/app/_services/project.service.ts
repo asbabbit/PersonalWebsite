@@ -24,7 +24,7 @@ export class ProjectService {
       description: 'I developed an obstacle avoidance system using an FRDM microcontroller, integrating an ultrasonic sensor, a servo motor, and dual DC motors. The system detects obstacles in real time and autonomously navigates by adjusting movement based on sensor input. Motor control is handled via TPM0, while the ultrasonic sensor operates through PortA and PortD to measure distances. A servo motor, controlled via TPM1, dynamically scans the surroundings to enhance detection accuracy. Additionally, an interrupt-driven switch (SW1) allows manual intervention. This project successfully demonstrates real-time obstacle detection and autonomous decision-making for smooth navigation.',
       projectLink: 'https://github.com/asbabbit/FRDM_Object_Detection',
       tags: [Tag.C, Tag.MCU],
-      pictures: ["assets/FRDM_Board.webp", "assets/Object_Detection.gif"]
+      pictures: ["assets/FRDM_Board.webp", "assets/Object_Detection.gif", "assets/DHT.png"]
     },
     {
       id: 2,
