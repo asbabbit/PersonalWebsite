@@ -5,7 +5,7 @@
         <div class="carousel-item"
          *ngFor="let picture of project.pictures; let i = index" 
          [class.active]="i === 0"
-         data-bs-interval="15000">
+         data-bs-interval="5000">
             <div class="d-flex justify-content-center align-items-center" style="height: 400px;">
                 <img [src]="picture" alt="slide" class="slide-image">
             </div>
