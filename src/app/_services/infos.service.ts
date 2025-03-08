@@ -30,7 +30,7 @@ export class InfosService {
       id: 2,
       exists: true,
       section: 'Experience',
-      title: 'Retail Associate',
+      title: 'Hunting Outfitter',
       company: 'BassPro LLC.',
       time: 'June 2022 - Present',
       summary: 'Balanced full-time studies while ensuring excellent customer service and collaborating with my team to handle high-demand sales, generating $10,000–$20,000 in weekly revenue in the hunting department.',
