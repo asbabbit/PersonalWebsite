@@ -43,7 +43,7 @@ export class InfosService {
       title: 'BSE Computer Systems',
       company: 'Arizona State University',
       time: 'May 2020 - December 2024',
-      summary: 'Recognized as a New American University Scholar and FURI Grant Recipient, with a GPA of 3.62 and Dean’s List honors for four semesters.',
+      summary: 'New American University Scholar, FURI Grant Recipient, magna cum laude, and four-time Dean’s List honoree.',
       icon: 'assets/ASU.svg'
     }
   ];

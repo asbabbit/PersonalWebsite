@@ -17,6 +17,7 @@ export class Tag{
     static readonly MCUXPresso = new Tag("MCUXpresso", "darkorange");
     static readonly CIRCUITS = new Tag("Digital Circuits", "black");
     static readonly WEBSOCKET = new Tag("Websocket", "blueviolet");
+    static readonly COLLAB  = new Tag("Collaboration", "indigo");
 
 
     private constructor(private readonly key: string, public readonly color: string){
