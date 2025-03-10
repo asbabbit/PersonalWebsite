@@ -8,7 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
@@ -26,7 +25,6 @@ import { CustomCarouselComponent } from './custom-carousel/custom-carousel.compo
     NavComponent,
     HomeComponent,
     PortfolioComponent,
-    ResumeComponent,
     ContactComponent,
     ProjectCardComponent,
     ProjectModalComponent,
